@@ -72,8 +72,9 @@ Na tej stronie zebrałem projekty, które zrobiłem w trakcie nauki.
 
 ## Czego szukam
 
-Roli eksperckiej w automatyce i infrastrukturze technicznej – rozwój, modernizacje, niezawodność – w której
-odpowiadam za własne wyniki i wykorzystam też dane i AI. Interesuje mnie również walidacja systemów skomputeryzowanych (GAMP, Data Integrity), także tych z AI.
+Roli w automatyce i infrastrukturze technicznej – rozwój, modernizacje, niezawodność – w której wykorzystam
+doświadczenie inżynierskie i kierownicze, a także dane i AI. Interesuje mnie również walidacja systemów
+skomputeryzowanych (GAMP, Data Integrity), także tych z AI.
 
 ## Kontakt
 
