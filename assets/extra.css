@@ -1,0 +1,34 @@
+/* trzy zdjęcia irysów obok siebie, na telefonie jedno pod drugim */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+.galeria figure {
+  margin: 0;
+}
+.galeria img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/* zrzuty z telefonu: pionowe, pokazuję górną część ekranu */
+.md-content .galeria img[src^="ekran_"] {
+  aspect-ratio: 3 / 4;
+  object-position: top;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+.galeria figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.podpis-licencji {
+  font-size: 0.65rem;
+  opacity: 0.75;
+}
+.notebook {
+  width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  overflow: hidden;
+}
