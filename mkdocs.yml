@@ -1,0 +1,55 @@
+site_name: Jerzy Śliwa – portfolio
+site_author: Jerzy Śliwa
+site_url: https://jerry-s-77.github.io/ds_ai_portfolio
+site_description: >-
+  Automatyka, dane i AI w utrzymaniu ruchu – moje projekty.
+
+repo_name: Jerry-S-77/ds_ai_portfolio
+repo_url: https://github.com/Jerry-S-77/ds_ai_portfolio
+
+theme:
+  name: material
+  language: pl
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Tryb ciemny
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Tryb jasny
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - assets/iframe.js
+
+nav:
+  - Strona domowa: index.md
+  - Projekty AI:
+      - "Głosowe zgłaszanie awarii": glosowe_zglaszanie_awarii/index.md
+      - "Zgłaszanie awarii": zgloszenia_awarii/index.md
+  - Analiza danych:
+      - "Titanic": titanic/index.md
+      - "Irysy": iris/index.md
