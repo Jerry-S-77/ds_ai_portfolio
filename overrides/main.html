@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{# Podgląd linku (LinkedIn, komunikatory) tylko dla strony głównej.
+   Podstrony projektów mają własne obrazki, które serwisy same wybierają. #}
+{% block extrahead %}
+  {% if page and page.is_homepage %}
+    {% set image = config.site_url | trim("/") ~ "/assets/podglad.png" %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ config.site_name }}">
+    <meta property="og:description" content="{{ config.site_description | trim }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:image:width" content="1512">
+    <meta property="og:image:height" content="791">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ image }}">
+  {% endif %}
+{% endblock %}

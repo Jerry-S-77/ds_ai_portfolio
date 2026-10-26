@@ -9,6 +9,7 @@ repo_url: https://github.com/Jerry-S-77/ds_ai_portfolio
 
 theme:
   name: material
+  custom_dir: overrides
   language: pl
   palette:
     - scheme: default
